@@ -4,6 +4,6 @@ import { authenticateLogger } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-router.post("/", authenticateLogger, createLog);
+router.post("/", createLog);
 
 export default router;
